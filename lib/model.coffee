@@ -953,6 +953,7 @@ spread_id_to_link = (id) ->
         text: args.text
         last_used: 0 # not yet used
         use_count: 0 # not yet used
+      , {suppressLog: true}
 
     useQuip: (args) ->
       check args, ObjectWith
